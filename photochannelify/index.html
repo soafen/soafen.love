@@ -57,6 +57,8 @@
         <li><a href="../index.html">home</a></li>
         <li><a href="../mii">mii</a></li>
         <li><a class="active" href="#">PhotoChannelify</a></li>
+		<li><a href="../videos" >video archive</a></li>
+		<li><a href="../lbm-gallery" >lbm gallery</a></li>
         <li class="right"><a href="#">uwu</a></li>
       </ul>
     <br />
@@ -65,7 +67,7 @@
     <input type="file" id="uploader"><br />
     <a class="styling" id="output-video" href=""><button style="font-size:24px;">Download</button></a>
     <p class="styling" id="message"></p><br/></div>
-    <script src='ffmpeg.min.js' crossorigin></script>
+    <script src='0.8.5/ffmpeg.min.js' crossorigin></script>
     <script id="rendered-js" >
         const message = document.getElementById('message');
         const { createFFmpeg, fetchFile } = FFmpeg;
@@ -92,6 +94,6 @@
         };
         document.getElementById('uploader').addEventListener('change', transcode);
     </script><br />
-<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;">due to a safety feature mid-rollout on browsers, this page currently only functions correctly on chrome :(<br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside>
+<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;"><strong>NEW:</strong> this site finally functions correctly on firefox! ^^<br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside>
 </body>
-</html>																			
+</html>
