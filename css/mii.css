@@ -1,0 +1,27 @@
+@font-face {
+  font-family: PinkChicken;
+  src: url('../font/PinkChicken-Regular.ttf');
+}
+html {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image:url('../mii/bg.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+cursor: url('../img/wiimouse.png'), pointer;
+}
+body {
+  margin: 0;
+  cursor: url('../img/wiimouse.png'), pointer;
+}
+.logo {
+  background: -webkit-linear-gradient(#eee, #333);
+}
+a {
+  cursor: url('../img/wiimouse.png'), pointer;
+  text-decoration:none;
+  color:black;
+}
+button {
+  cursor: url('../img/wiimouse.png'), pointer;
+  font-size:20px;
+}

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!DOCTYPE html><html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,59 +8,11 @@
         <meta content="https://soafen.love/photochannelify/LogoSmol.png" property="og:image">
         <meta content="#FF6A00" data-react-helmet="true" name="theme-color">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-        <style>
-			@font-face {
-  				font-family: PinkChicken;
-  				src: url('../font/PinkChicken-Regular.ttf');
-			}
-            html, body {
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                cursor: url(wiimouse.png), pointer;
-                background-image: url(corkboard.png);
-            }
-            .styling {
-                font-family: 'Source Sans Pro', sans-serif;
-                font-size: 30px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-			ul.topnav {
-  				list-style-type: none;
- 				margin: 0;
-  				padding: 0;
-  				overflow: hidden;
-  				background-color: #333;
-			}
-			ul.topnav li {float: left;}
-			ul.topnav li a {
-  				display: block;
-  				color: white;
-  				text-align: center;
-  				padding: 14px 16px;
-  				text-decoration: none;
-			}
-			ul.topnav li a:hover:not(.active) {background-color: #111;}
-			ul.topnav li a.active {background-color: #FF84AA;}
-			ul.topnav li.right {float: right;}
-			@media screen and (max-width: 600px) {
- 				ul.topnav li.right, 
-  				ul.topnav li {float: none;}
-			}
-        </style>
+        <link rel="stylesheet" href="../css/photochannelify.css">
+		<link rel="shortcut icon" type="image/png" href="img/sophieheart.png"/>
 </head>
 <body onload="document.getElementById('output-video').style.visibility = 'hidden';">
-    <ul class="topnav" style="font-family: PinkChicken;font-weight:bold;font-size:23px">
-        <li><a href="../index.html">home</a></li>
-        <li><a href="../mii">mii</a></li>
-        <li><a class="active" href="#">PhotoChannelify</a></li>
-		<li><a href="../videos" >video archive</a></li>
-		<li><a href="../lbm-gallery" >lbm gallery</a></li>
-        <li class="right"><a href="#">uwu</a></li>
-      </ul>
-    <br />
+    <br>
     <div class="styling" style="top:0;left:0;width:100%;text-align:center;color:#000;padding-top:5px;padding-bottom:5px;background-color:rgba(255,255,255,.3);">PhotoChannelify!</div><br/>
     <div class="styling" style="padding:32px;width:70%;margin:auto;background-color:#d6d6d6;color:#000;border:2px solid #292929;"><h5>Convert videos for use in the Photo Channel!</h5>
     <input type="file" id="uploader"><br />
@@ -94,6 +45,7 @@
         };
         document.getElementById('uploader').addEventListener('change', transcode);
     </script><br />
-<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;"><strong>NEW:</strong> this site finally functions correctly on firefox! ^^<br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside>
+<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;"><strong>NEW:</strong> this site finally functions correctly on firefox! ^^ (though it might not work great due to an out of memory error)<br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside><br>
+<div style="text-align:center;"><a href="../">home</a></div>
 </body>
 </html>
