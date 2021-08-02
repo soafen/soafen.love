@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
-  cursor: url('../img/wiimouse.png'), pointer;
+  cursor: url('https://rc24.xyz/images/cursors/wii.cur'), pointer;
   background-image: url('../img/corkboard.png');
 }
 .styling {
