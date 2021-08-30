@@ -2,14 +2,14 @@
     <head>
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <title>PhotoChannelify!</title>
+        <title>PhotoChannelify ~ soafen.love</title>
         <meta content="PhotoChannelify!" property="og:title">
         <meta content="Convert videos for the Photo Channel" property="og:description">
         <meta content="https://soafen.love/photochannelify/LogoSmol.png" property="og:image">
         <meta content="#FF6A00" data-react-helmet="true" name="theme-color">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/photochannelify.css">
-		<link rel="shortcut icon" type="image/png" href="img/sophieheart.png"/>
+		<link rel="shortcut icon" type="image/png" href="../img/sophieheart.png"/>
 </head>
 <body onload="document.getElementById('output-video').style.visibility = 'hidden';">
     <br>
@@ -45,7 +45,7 @@
         };
         document.getElementById('uploader').addEventListener('change', transcode);
     </script><br />
-<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;"><strong>NEW:</strong> this site finally functions correctly on firefox! ^^ (though it might not work great due to an out of memory error)<br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside><br>
+<aside style="padding:16px;width:50%;margin:auto;background-color:rgba(50,42,36,0.8);text-align:center;color:#fff;border:8px solid #1e1e1e;">currently broken it would seem. if you're not scared of CLI try <strong>ffmpeg -i [file] -vcodec mjpeg -ar 44100 -ac 2 -b:a 64k -acodec pcm_s16le -vf 'fps=fps=30, scale=-1:480' out.avi</strong><br /><span style="font-size:18px;">this site uses code of <a style="color:#fff;" href="http://ffmpeg.org">FFmpeg</a> licensed under the <a style="color:#fff;" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">LGPLv2.1</a> and its source can be downloaded <a style="color:#fff;" href="https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2">here</a>.</span></aside><br>
 <div style="text-align:center;"><a href="../">home</a></div>
 </body>
 </html>
