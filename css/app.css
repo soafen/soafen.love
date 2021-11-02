@@ -1,0 +1,36 @@
+@font-face {
+    font-family: PinkChicken;
+    src: url('../font/PinkChicken-Regular.ttf');
+}
+body {
+margin: 0;
+background-color: #ffcdcc;
+font-size: 48px;
+font-family: PinkChicken, "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive;
+}
+a {
+    text-decoration:none;
+    color:#9e7f7e;
+}
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    text-align:center;
+    overflow: hidden;
+    background-color: #222;
+    color: white;
+    text-justify: center;
+}
+.page {
+    color: white;
+    padding:20px;
+    width: 25%;
+}
+.active {
+    padding:20px;
+    color: white;
+    background-color: #ff84aa;
+}
