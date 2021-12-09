@@ -1,0 +1,81 @@
+@font-face {
+		font-family: PinkChicken;
+		src: url('../font/PinkChicken-Regular.ttf');
+	}
+a {
+	text-decoration:none;
+	color:#9e7f7e;
+}
+a:hover {
+	color: black;
+}
+body {
+	margin: 0;
+	background-color: #ffcdcc;
+	font-family: PinkChicken, "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive;
+}
+
+
+@media (max-width: 999px) {
+	body {
+		font-size: 5vw;
+	}
+	h2 {
+		font-size: 18vw;
+		text-align:center;
+	}
+	.miiblock {
+		position:relative;
+		top:-50px;
+		background-image:url('../img/hapmii2.png');
+		background-repeat:no-repeat;
+		background-position: top 25% center;
+		background-size: 50%;
+		text-shadow: 0px 0px 6px #ffcdcc;
+		text-align: center;
+	}
+	.miitext {
+		position: relative;
+		padding-top:35%;
+	}
+	.socials {
+		font-size:10vw;
+	}
+}
+
+@media (min-width: 1000px) {
+	h2 {
+		font-size:88px;
+		letter-spacing:8px;
+	}
+	.miiblock {
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:800px;
+		transform:translate(-50%, -50%);
+		-ms-transform:translate(-50%, -50%);
+		background-image:url('../img/hapmii1.png');
+		background-repeat:no-repeat;
+		background-position:100% 50%;
+		opacity:75%;
+		max-width:50%;
+		margin:auto;
+		text-shadow: 0px 0px 6px #ffcdcc;
+	}
+	.miitext {
+		position: relative;
+		top: -50px;
+	}
+	.socials {
+		font-size:38px;
+	}
+	.links {
+		text-align:center;
+		font-size:32px;
+		padding-bottom:20px;
+	}
+	body {
+		font-size:24px;
+	}
+}
