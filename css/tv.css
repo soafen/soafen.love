@@ -1,0 +1,63 @@
+@font-face {
+    font-family: PinkChicken;
+    src: url('../font/PinkChicken-Regular.ttf');
+}
+body {
+margin: 0;
+background-color: #ffcdcc;
+font-size:24px;
+font-family: PinkChicken, "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive;
+}
+a {
+    text-decoration:none;
+    color:#9e7f7e;
+}
+a:hover {
+    color: black;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+#tv_container { 
+    position: relative;
+    margin: 10px auto;
+    width: 1749px;
+    height: 988px;
+}
+#tv_container #video {
+    z-index: 0;
+    position: absolute;
+    top: 160px;
+    left: 230px;
+}
+#tv_container #notes {
+    z-index: 0;
+    position: absolute;
+    top: 40px;
+    left: 1280px;
+}
+#tv_container #chat {
+    z-index: 0;
+    position: absolute;
+    transform: rotateX(-2.5deg) rotateY(-25deg) rotateZ(5deg);
+    top: 559px;
+    left: 1316px;
+}
+#tv_frame {
+    width: 1749px;
+    height: 988px;
+    z-index: -1;
+    background-image: url('https://soafen.love/img/tv/tvframe.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h4 {
+    padding: 0px;
+    margin: 0px;
+}
+#date {
+    font-size:18px;
+}
