@@ -4,7 +4,7 @@
 }
 html {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image:url('../img/mii/bg.png');
+  background-image:url('../mii/bg.png');
   background-repeat:no-repeat;
   background-size:cover;
 cursor: url('../img/wiimouse.png'), pointer;

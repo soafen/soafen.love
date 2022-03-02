@@ -17,7 +17,8 @@
         <div id="tv_container">
             <iframe id="video" width="853" height="481" src="https://www.youtube.com/embed/sACpNTPND7I" allowfullscreen="" frameborder="0"></iframe>
             <iframe id="chat" width="352" height="210" src="https://www.youtube.com/live_chat?v=sACpNTPND7I&embed_domain=soafen.love" frameborder="0"></iframe>
-            <aside id="notes" style="border:8px solid #ff84aa;background-color:#FFE9E8;width:460px;height:440px;"><div style="position:relative;top:10px;left:10px;max-width:440px;"><h4>hello world!</h4><span id="date">16th Oct, 2021</span><br>i have now made a little page for soafenTV instead of just a redirect to the youtube page c;</div></aside>
+            <aside id="notes" style="border:8px solid #ff84aa;background-color:#FFE9E8;width:460px;height:440px;"><div style="position:relative;top:10px;left:10px;max-width:440px;"><h4>hello world!</h4><span id="date">16th Oct, 2021</span><br>i have now made a little page for soafenTV instead of just a redirect to the youtube page c;<br>Now Playing: <?php $nowplaying = file_get_contents('./sync/nowplaying.txt');
+echo $nowplaying ?></div></aside>
             <div id="tv_frame"></div>
         </div>
     </body>
