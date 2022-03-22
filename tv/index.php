@@ -15,10 +15,9 @@
     <body>
         <div style="text-align:center;font-weight:bold;font-size:56px;padding-top:16px;">soafenTV</div>
         <div id="tv_container">
-            <iframe id="video" width="853" height="481" src="https://www.youtube.com/embed/sACpNTPND7I" allowfullscreen="" frameborder="0"></iframe>
-            <iframe id="chat" width="352" height="210" src="https://www.youtube.com/live_chat?v=sACpNTPND7I&embed_domain=soafen.love" frameborder="0"></iframe>
-            <aside id="notes" style="border:8px solid #ff84aa;background-color:#FFE9E8;width:460px;height:440px;"><div style="position:relative;top:10px;left:10px;max-width:440px;"><h4>hello world!</h4><span id="date">16th Oct, 2021</span><br>i have now made a little page for soafenTV instead of just a redirect to the youtube page c;<br>Now Playing: <?php $nowplaying = file_get_contents('./sync/nowplaying.txt');
-echo $nowplaying ?></div></aside>
+            <iframe id="video" width="853" height="481" src="https://player.twitch.tv/?channel=soafenTV&parent=soafen.love" frameborder="0"></iframe>
+            <iframe id="chat" width="352" height="210" src="https://www.twitch.tv/embed/soafentv/chat?parent=soafen.love" frameborder="0"></iframe>
+            <aside id="notes" style="border:8px solid #ff84aa;background-color:#FFE9E8;width:460px;height:440px;"><div style="position:relative;top:10px;left:10px;max-width:440px;"><h4>Hello, Twitch!</h4><span id="date">22nd March, 2022</span><br>soafenTV is now on Twitch! after almost 4,300 hours on YouTube, we're now on Twitch ^^<br>Now Playing: <?php $nowplaying = file_get_contents('./sync/nowplaying.txt'); echo $nowplaying ?><br><br>if you see a cookie notice on the laptop, click on the screen, press tab four times and hit space =p</div></aside>
             <div id="tv_frame"></div>
         </div>
     </body>
