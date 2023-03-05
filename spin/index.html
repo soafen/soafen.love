@@ -12,6 +12,13 @@
 		<link rel="shortcut icon" type="image/png" href="img/sophieheart.png"/>
 	</head>
 	<body>
-		<div class="spinner"><img src="../img/soafspin.gif"><br><a href="../">home</a></div>
+		<div class="spinner"><img src="../img/soafspin.gif"><br><p id="counter">soaf has spun 0 times!</p><a href="../">home</a></div>
 	</body>
+	<script>
+		let count = 0;
+		setInterval(() => {
+		count++;
+		document.getElementById("counter").textContent = "soaf has spun " + count + " times!";
+		}, 1120);
+</script>
 </html>

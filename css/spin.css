@@ -2,6 +2,7 @@ html, body {
     background-color: #ffcdcc;
     margin: 0;
     padding: 0;
+    font-family: PinkChicken;
     }
 .spinner {
     position: absolute;
@@ -10,13 +11,15 @@ html, body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+#counter{
+    font-size: 28px;
+}
 @font-face {
     font-family: PinkChicken;
     src: url('../font/PinkChicken-Regular.ttf');
 }
 a {
     text-decoration:none;
-    font-family: PinkChicken;
     color: #9e7f7e;
     font-size: 28px;
 }
