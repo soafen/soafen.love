@@ -1,17 +1,41 @@
-@font-face {
-    font-family: PinkChicken;
-    src: url('../font/PinkChicken-Regular.ttf');
-}
 body {
-margin: 0;
-background-color: #ffcdcc;
-font-size:24px;
-font-family: PinkChicken, "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive;
-}
+	background-color: #ffcdcc;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	color: #3F3333;
+	}
 a {
-    text-decoration:none;
-    color:#9e7f7e;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
 }
-a:hover {
-    color: black;
+a img {
+	border: none;
+	outline: none;
+}
+img {
+			-ms-interpolation-mode: nearest-neighbor;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: pixelated;
+}
+.smooth {
+  image-rendering: smooth;
+}
+table, th, td {
+	border: 1px solid #000;
+}
+.main-box { 
+	margin: 0 auto;
+	width: 650px;
+	height: 400px;
+	}
+.info {
+	padding-left: 195px;
+	padding-bottom: 30px;
+	text-align: left;
+}
+.links {
+	padding-bottom: 50px;
 }

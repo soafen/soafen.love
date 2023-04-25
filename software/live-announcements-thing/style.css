@@ -1,0 +1,11 @@
+@font-face { font-family: PinkChicken; src: url('PinkChicken-Regular.ttf'); }
+@font-face { font-family: Chewy; src: url('Chewy-Regular.ttf'); }
+body { font-family: PinkChicken, "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive; color: #3F3333; background-color: #ffcdcc; }
+a { color: #B69291; }
+img { padding: 10px; }
+a:hover { color: #000; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+.logo { font-family: Chewy, verdana, sans-serif; text-align: center; font-size: 48px; color: #333333; }
+.tagline { text-align: center; font-size: 24px; color: #666666; }
+.description { margin-top: 40px; font-size: 18px; color: #333333; text-align: center; }
+.credit { margin-top: 20px; font-size: 14px; color: #B69291; }

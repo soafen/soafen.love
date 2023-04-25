@@ -1,0 +1,6 @@
+body { margin: 0; background-color: #261a32; color: white; font-family: sans-serif; text-align: center; }
+a { color: #eaeaea; font-weight: bold; text-decoration: none; }
+img { border: 0; }
+h1 { padding-top: 12px; font-size: 48px; }
+hr { width: 600px; }
+.main-card { margin: auto; background-color: #150821; width: 700px; }

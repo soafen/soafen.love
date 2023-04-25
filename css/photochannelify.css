@@ -1,7 +1,0 @@
-body { background-image: url("../img/photochannelify/corkboard.png"); font-family: sans-serif; }
-body, html { padding:0; margin:0; cursor: url('../img/wiimouse.png'), pointer; }
-h1 { color:#fff; text-shadow:2px 2px #000; padding:20px; font-size:55px; }
-.main-page { background-color: rgba(255, 255, 255, 0.5); width: 900px; margin: auto; }
-.main-page-content { padding:50px; }
-.banner { background-color:rgba(245, 160, 40, 0.5); text-align:center; height:100px; }
-a { text-decoration: none; color: #000; cursor: url('../img/wiimouse.png'), pointer; }
