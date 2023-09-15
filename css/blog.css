@@ -1,0 +1,18 @@
+li {
+  background: #ffe5e5;
+  color: #46031f;
+  padding: 5px;
+}
+ul {
+	padding: 10px;
+	max-width: 500px;
+	margin: auto;
+	list-style-image: url('../img/cherryblossom.png');
+}
+.post-content {
+	text-align: left;
+}
+li {
+	list-style-position:inside;
+	list-style-type:square;
+}

@@ -3,3 +3,4 @@ videos/**/*.wmv
 videos/**/*.mp4
 videos/**/thumbnail.jpg
 Thumbs.db
+web.config

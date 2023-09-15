@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>soafen's blog</title>
+		<description>ramblings and updates from soafen herself</description>
+		<link>http://soafen.love/blog</link>
+		<category>Blog</category>
+		<language>en-CA</language>
+		<image>
+			<url>http://soafen.love/img/cherryblossom.png</url>
+			<title>soafen's blog</title>
+			<link>http://soafen.love/blog</link>
+		</image>
+		<item>
+			<title>hello world !</title>
+			<category>site updates</category>
+			<link>http://soafen.love/blog/2023/hello-world</link>
+			<guid>http://soafen.love/blog/2023/hello-world</guid>
+			<description>
+			so, it's finally here, my very own blog, and it should be accessible all the way from the latest Android-powered kettle right down to the family DELL Dimension from the turn of the century, because why not?
+			</description>
+			<pubDate>Fri, 15 Sep 2023 15:47:00 UTC</pubDate>
+		</item>
+	</channel>
+</rss>
