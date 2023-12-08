@@ -1,6 +1,6 @@
 *.bak
-videos/**/*.wmv
+videos/**/*.jpg
+videos/**/*.webm
 videos/**/*.mp4
-videos/**/thumbnail.jpg
 Thumbs.db
 .stignore

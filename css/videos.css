@@ -1,0 +1,24 @@
+h4, ul {
+    text-align: left;
+}
+li {
+    background: #ffe5e5;
+    line-height: 25px;
+    color: #46031f;
+    padding: 5px;
+  }
+  ul {
+      padding: 10px;
+      max-width: 600px;
+      margin: auto;
+      list-style-type: none;
+  }
+  img {
+    float: right;
+  }
+table, th, td {
+	border: 0px solid #000 !important;
+}
+table {
+    width: 590px;
+}

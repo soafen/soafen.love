@@ -16,3 +16,6 @@ li {
 	list-style-position:inside;
 	list-style-type:square;
 }
+table, th, td {
+	border: 0px solid #000 !important;
+}
