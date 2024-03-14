@@ -4,3 +4,4 @@ videos/**/*.webm
 videos/**/*.mp4
 Thumbs.db
 .stignore
+.well-known
