@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/blog.css">
+		<title>run The Orange Box @ 60FPS with a Vanilla Xbox 360 - soafen's blog</title>
+	</head>
+	<body align="center">
+		<div class="main-box">
+			<a href="../"><< back to posts list</a>
+			<div class="post-content">
+				<h1>run The Orange Box @ 60FPS with a Vanilla Xbox 360</h1>
+				<aside>published 19:44 UTC on March 20th, 2023</aside><br>
+				<p><video width="650" height="365" controls>
+						<source src="/videos/2023/hl2xbox60fps.webm" type="video/webm">
+						<source src="/videos/2023/hl2xbox60fps.mp4" type="video/mp4">
+					your browser can't play embedded videos.
+					</video>
+					<i>ReveriePass made and shared a discovery last year to get The Orange Box running at 60fps on Xbox 360, One & Series consoles, through modifying the 'User Settings' file.</i></p>
+				<p>i <i>love</i> Half-Life 2, so i was ecstatic when i saw Digital Foundry publish <a href="https://www.youtube.com/watch?v=KsgFBOYcAgs">a video about Half-Life 2 running at 60 frames per second on unmodded Xbox consoles</a> thanks to a tip they were given by a Patreon supporter of theirs by the name of SJ33, which linked to <a href="https://twitter.com/f4micom/status/1729320088463909107">a tweet from @f4micom</a>, which itself linked to <a href="https://www.youtube.com/watch?v=tJ3V-zgskCA">a year-old YouTube video from ReveriePass</a>, whose knowledge i am now passing on to you guys. isn't the web wonderful?</p>
+				<p>ReveriePass discovered a method to modify the config file to uncap the framerate without the need to have a hardware-modded Xbox 360. this is pretty wild stuff to see on such a locked-down platform as a seventh generation home console!</p>
+				<p>this mod is obviously more beneficial to users of Xbox One and Series consoles, but i just sold my Xbox Series S, so i stuck with my Xbox 360 S.</p>
+				<h3>how to do it</h3>
+				<p>you'll need:</p>
+					<ul>
+						<li>an Xbox 360</li>
+						<li>a PC or VM running Windows</li>
+						<li>a USB flash drive</li>
+						<li>a copy of The Orange Box</li>
+						<li>the <a href="https://wemod.com/horizon">Horizon</a> app</li>
+					</ul>
+				<p>The Orange Box has now been copmletely delisted and is unavailable for purchase, even from the Xbox Marketplace site, so if you don't already have it, your only option is a physical copy.</p>
+				<p><i>it's criminal that such important games aren't easily accessible on all modern platforms!</i></p>
+				<p>first, boot up The Orange Box on your Xbox 360 with your flash drive inserted. load up Half-Life 2, and enter the Settings menu. it will ask you to select a storage device, so go ahead and select the hard drive. when the Settings menu opens, make sure to dial things in now, because any future attempts to enter this menu could cause the mod to get wiped!</p>
+				<p>once you've finished, close the Settings menu and quit the game, repeating this process for any of the games you'd like to perform this hack to, bearing in mind it doesn't seem to want to work with Team Fortress 2 sadly.</p>
+				<p>after that, return to your Xbox Dashboard and navigate to System Settings. select your hard drive, "Games & Apps", "The Orange Box", then copy "User Settings" to your flash drive.</p>
+				<p>take your flash drive to your Windows machine and open up Horizon.</p>
+				<p><img src="image1.jpg" width="650" height="503" alt="pictured: screenshot of the Horizon program, showing the Device Explorer side pane."/>
+					<i>wow, this program hasn't visually changed one bit since i last used it 10 years ago!</i>
+				</p>
+				<p>enter the Device Explorer on the right side and navigate into the Games folder on your flash drive, followed by The Orange Box, then User Settings. click the little cog icon on the upper-right-hand corner, which should open a little pop-up in the blank space. click the Contents tab, right-click hl2_config.cfg and extract it to anywhere on your computer, like the Desktop.</p>
+				<p>opening up the freshly-extracted config file with Notepad, it will be a very familiar sight to anyone who's toyed around with the Source Engine before. ReveriePass' video leaves some commands in their description to disable the framerate limit & V-Sync, along with a couple other enhancements that can be afforded by the extra processing grunt from the higher-end consoles (so i'll omit these)</p>
+				<div class="code">fps_max 0<br>
+					mat_motion_blur_enabled 0<br>
+					mat_vsync 1<br>
+					mat_picmip -1<br>
+					mat_hdr_level 2<br>
+					mat_specular 1<br>
+					r_shadowrendertotexture 1<br>
+					r_flashlightdepthtexture 1<br>
+					r_lod 0<br>
+					snd_mixahead 0.05
+				</div>
+				<p>you can add any command you'd like here (even sv_cheats 1!) but for now i'll just add <code>cl_showfps 1</code> so i can get a readout of my framerate on screen.</p>
+				<p>once you've made all your changes, save the file and quit Notepad.</p>
+				<p>back in Horizon, right-click <i>hl2_config</i> again, this time choosing <i>Replace...</i> to replace the file with the modified version we've just made.</p>
+				<p>after that, all that's left to do on the PC is to click the red <i>Save, Rehash and Resign</i> button and eject your flash drive.</p>
+				<p>back on the Xbox, re-insert your flash drive and select it on the Storage screen that you should still be on. navigate once again to <i>Games and Apps</i>, <i>The Orange Box</i>, then <i>User Settings</i>. copy this file to your hard drive (or the cloud if you'd like to get that uncapped Source 1 goodness on the Xbox One or Series consoles!) select <i>Yes</i> if it warns you about replacing the file on your hard drive, and wait for the copy to complete.</p>
+				<h3>the experience</h3>
+				<p>loading up The Orange Box, then Half-Life 2, as soon as we start a New Game, i instantly saw the framerate counter i enabled!</p>
+				<p><img src="image2.jpg" width="650" height="365" alt="pictured: screenshot of the Half-Life 2 chapter select screen, along with green text on the top-right that reads '46 fps on maps/background01.360.bsp'"/>
+					<i>46 fps, nice!</i>
+				</p>
+				<p>et voilà, Half-Life 2 running at an uncapped framerate on an unmodified Xbox 360. it's beautiful.</p>
+				<p>some major caveats, though, bare mentioning:</p>
+				<p>- you can't enter the settings menu anymore without losing our customizations,<br>
+				   - loading an old save file loses the modified config too (new saves should work)
+				</p>
+				<p>that's right, it's single session Half-Life 2 playthrough time!</p>
+				<p><i>or..you could take advantage of Xbox Series' quick resume feature, but come on, where's the fun in that?!</i></p>
+				<p>speaking of fun, since these <i>are</i> single player games, why not have some fun with them? <code>sv_cheats 1; impulse 101</code> will give you the full set of Half-Life 2's weapons and ammo, even in Portal! you can execute multiple commands at once using a semicolon, and you can use this to bind extra commands to buttons like Select for example.</p>
+				<h3>conclusion</h3>
+				<p>this is really cool stuff to see personally. Half-Life 2 is my favourite video game period, and Source 1 is my bread and butter.</p>
+				<p>i always thought it was impressive that the Xbox 360 could run these games and have them look so good, but after <a href="https://www.youtube.com/watch?v=SgZrd1eDy3E">a full playthrough with this mod</a>, seeing it hit 60fps as often as it did is more impressive still!</p>
+				<p>this is my first time turning a video of mine into a blog post, and hopefully it was helpful to somebody out there. thanks for reading! :3</p>
+
+			</div>
+		<hr><a href="../">home</a>
+		</div>
+	</body>
+</html>
